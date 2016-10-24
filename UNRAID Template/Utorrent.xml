@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Utorrent</Name>
+  <Repository>porkie/utorrent</Repository>
+  <Registry>https://hub.docker.com/r/porkie/utorrent/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]/gui</WebUI>
+  <TemplateURL/>
+  <Icon>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj8doF476bB0zDUJR82XbOyh4z1E61bIa6YNaF44Os6q46rUA5</Icon>
+  <ExtraParams/>
+  <DateInstalled>1477321826</DateInstalled>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6881</HostPort>
+        <ContainerPort>6881</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/utorrent/</HostDir>
+      <ContainerDir>/utorrent</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/media/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Config Name="Host Port 2" Target="6881" Default="6881" Mode="tcp" Description="Container Port: 6881" Type="Port" Display="always" Required="false" Mask="false">6881</Config>
+  <Config Name="Host Path 1" Target="/utorrent" Default="/mnt/user/appdata/utorrent/" Mode="rw" Description="Container Path: /settings" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/utorrent/</Config>
+  <Config Name="Host Path 2" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/media/</Config>
+  <Config Name="Host Port 1" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+</Container>
