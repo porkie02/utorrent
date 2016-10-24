@@ -28,7 +28,7 @@ Create your Docker Compose file (docker-compose.yml) using the following YAML sn
 
 ```yaml
 utorrent:
-    image: ekho/utorrent
+    image: porkie02/utorrent
     container_name: utorrent
     volumes:
         - <data dir>:/data
