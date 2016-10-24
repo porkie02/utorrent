@@ -1,6 +1,6 @@
 # Docker container with utorrent
 FROM ubuntu:trusty
-MAINTAINER Boris Gorbylev "ekho@ekho.name"
+MAINTAINER Porkie
 
 RUN locale-gen en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
