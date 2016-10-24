@@ -10,7 +10,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:8080]/gui</WebUI>
   <TemplateURL/>
-  <Icon>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj8doF476bB0zDUJR82XbOyh4z1E61bIa6YNaF44Os6q46rUA5</Icon>
+  <Icon>https://github.com/porkie02/utorrent/blob/master/UNRAID%20Template/image/utorrent.jpg</Icon>
   <ExtraParams/>
   <DateInstalled>1477321826</DateInstalled>
   <Description/>
